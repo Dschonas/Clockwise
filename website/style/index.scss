@@ -1,0 +1,23 @@
+$primary-color:		#35536B;
+$secondary-color:	#77B39B;
+$text-color:		#001D26;
+$light-color:		#F6E27F;
+$accent-color:		#D4D2DA;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{}
+
+#pageheader{
+	height: 100vh;
+	width: 100%;
+}
+
+#pagebody{
+	height: 300px;
+	width: 100%;
+	background: red;
+}
