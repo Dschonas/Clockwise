@@ -1,19 +1,119 @@
+//colors
 $primary-color:		#35536B;
 $secondary-color:	#77B39B;
 $text-color:		#001D26;
 $light-color:		#F6E27F;
 $accent-color:		#D4D2DA;
 
+//font
+$font-size: 105%;
+$font-size-header: 300%;
+
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Source Sans Pro';
+	font-size: $font-size;
 }
 
 body{}
 
-#pageheader{
+#pagehead{
 	height: 100vh;
 	width: 100%;
+	//background-color: $accent-color; TODO change background
+
+	#titeltext{
+		position: absolute;
+		width: 90%;
+		left: 50%;
+		top: 12%;
+		transform: translateX(-50%) translateY(-20%);
+		font-size: $font-size-header;
+		font-weight: semi-bold;
+		text-align: center;
+	}
+
+	#registerform{
+		position: absolute;
+		width: 70%;
+		left: 40%;
+		top: 30%;
+		transform: translateX(-31%);
+		form{
+			height: 100%;
+			width: 40%;	
+			float: left;
+			ul{
+				list-style-type: none;
+				li{
+					margin-left: 10%;
+					margin-top: 8%;
+					width: 80%;
+					input{
+						outline: none;
+						width: 100%;
+					}
+					input[type=text], input[type=password]{
+						font-size: $font-size;
+						border: none;
+						border-bottom: 2px solid $primary-color;
+						transition: border-bottom-color ease-in-out .2s;
+					}
+					input[type=text]:focus, input[type=password]:focus{
+						border-bottom-color: $secondary-color
+					}
+				}
+				li:first-child{
+					margin-top: 18;
+				}
+				li:last-child{
+					margin-top: 1%;
+					a{
+						display: block;
+						width: 100%;
+						font-size: $font-size - 20;
+						text-align: center;
+					}
+				}
+			}
+		}
+		img{
+			width: 50%;
+			height: 50%;
+			float: left;
+			-webkit-touch-callout: none; /* iOS Safari */
+			-webkit-user-select: none;   /* Chrome/Safari/Opera */
+    		-khtml-user-select: none;    /* Konqueror */
+			-moz-user-select: none;      /* Firefox */
+			-ms-user-select: none;       /* IE/Edge */
+			user-select: none;
+		}
+	}
+
+	#experiencemore{
+		position: absolute;
+		top: 88%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 40%;
+		height: 10%;
+		margin: 0 auto;
+		a{
+			display: block;
+			width: 100%;
+			margin-bottom: 2%;
+			font-size: $font-size + 25;
+			font-weight: semi-bold;
+			color: $primary-color;
+			text-align: center;
+		}
+		img{
+			width: 100%;
+			height: 45%;
+		}
+	}
+
 }
 
 #pagebody{

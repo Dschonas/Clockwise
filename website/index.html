@@ -1,25 +1,38 @@
 <!DOCTYPE HTML>
-<head>
-	<title>Clockwise</title>
-	<link rel="stylesheet" type="text/css" href="style/index.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<div id="pageheader">
-		<div id="titeltext">
-			Clockwise. Time management on point.
+<html>
+	<head>
+		<title>Clockwise</title>
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600italic,600' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+		<div id="pagehead">
+			<div id="titeltext">Clockwise. Time management on point.</div>
+			<div id="registerform">
+				<img src="asstets/Logo.svg"/>
+				<form action="php/register.php" method="post">
+					<ul>
+						<li><input type="text" 		placeholder="Username" 	name="username"/></li>
+						<li><input type="password" 	placeholder="Password" 	name="password"/></li>
+						<li><input type="text" 		placeholder="E-Mail" 	name="mail"/></li>
+						<li><input type="submit"	value="Register Now"	name="register"/></li>
+						<li><a href="#"> <!-- TODO add action for script to show pop up -->
+							Already registered?
+						</a></li>
+					</ul>
+				</form>
+			</div>
+			<div id="experiencemore">
+				<a>Experience more!</a>
+				<img src="asstets/Arrow_Down.svg"/>
+			</div>
 		</div>
-		<img src="asstets/Logo.svg"/>
-		<form action="php/register.php">
-			<input type="text" 		placeholder="Username" 	name="username"/>
-			<input type="password" 	placeholder="Password" 	name="password"/>
-			<input type="text" 		placeholder="E-Mail" 	name="email"/>
-			<input type="submit"	text="Register Now"		name="register"/>
-		</form>
-		<div id="login"> <!-- add action for script to show pop up -->
-			Already registered?
+
+		<div id="pagebody">
 		</div>
-	</div>
-	<div id="pagebody">
-	</div>
-</body>
+<!--<div>Icons made by <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
+	</body>
+</html>
