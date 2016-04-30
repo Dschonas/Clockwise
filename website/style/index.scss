@@ -3,7 +3,7 @@ $primary-color:		#35536B;
 $secondary-color:	#77B39B;
 $text-color:		#001D26;
 $light-color:		#F6E27F;
-$accent-color:		#D4D2DA;
+$accent-color:		#ECEAF2;
 
 //font
 $font-size: 105%;
@@ -21,7 +21,7 @@ body{}
 #pagehead{
 	height: 100vh;
 	width: 100%;
-	//background-color: $accent-color; TODO change background
+	//background-color: $accent-color; //TODO change background
 
 	#titeltext{
 		position: absolute;
@@ -40,6 +40,7 @@ body{}
 		left: 40%;
 		top: 30%;
 		transform: translateX(-31%);
+		background: white;
 		form{
 			height: 100%;
 			width: 40%;	
@@ -61,7 +62,14 @@ body{}
 						transition: border-bottom-color ease-in-out .2s;
 					}
 					input[type=text]:focus, input[type=password]:focus{
-						border-bottom-color: $secondary-color
+						border-bottom-color: $secondary-color;
+					}
+					input[type=submit]{
+						height: 100%;
+						padding: 1%; 
+						color: $accent-color;
+						background-color: $primary-color;
+						border: none;
 					}
 				}
 				li:first-child{
@@ -96,13 +104,14 @@ body{}
 		top: 88%;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 40%;
+		width: 100%;
 		height: 10%;
 		margin: 0 auto;
+		transition: top ease-in-out .5s;
 		a{
 			display: block;
 			width: 100%;
-			margin-bottom: 2%;
+			margin-bottom: 1%;
 			font-size: $font-size + 25;
 			font-weight: semi-bold;
 			color: $primary-color;
@@ -111,6 +120,9 @@ body{}
 		img{
 			width: 100%;
 			height: 45%;
+		}
+		&:hover{
+			top: 87%;
 		}
 	}
 
