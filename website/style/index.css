@@ -2,21 +2,26 @@
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro';
-  font-size: 105%;
+  font-size: 30px;
+}
+
+html {
+  display: block;
 }
 
 #pagehead {
+  position: absolute;
   height: 100vh;
   width: 100%;
 }
 
-#pagehead #titeltext {
+#pagehead #titletext {
   position: absolute;
   width: 90%;
   left: 50%;
   top: 12%;
   transform: translateX(-50%) translateY(-20%);
-  font-size: 300%;
+  font-size: 70px;
   font-weight: semi-bold;
   text-align: center;
 }
@@ -26,13 +31,13 @@
   width: 70%;
   left: 40%;
   top: 30%;
-  transform: translateX(-31%);
+  transform: translateX(-35%);
   background: white;
 }
 
 #pagehead #registerform form {
   height: 100%;
-  width: 40%;
+  width: 50%;
   float: left;
 }
 
@@ -52,7 +57,6 @@
 }
 
 #pagehead #registerform form ul li input[type=text], #pagehead #registerform form ul li input[type=password] {
-  font-size: 105%;
   border: none;
   border-bottom: 2px solid #35536B;
   transition: border-bottom-color ease-in-out .2s;
@@ -81,7 +85,7 @@
 #pagehead #registerform form ul li:last-child a {
   display: block;
   width: 100%;
-  font-size: 85%;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -102,38 +106,153 @@
   user-select: none;
 }
 
-#pagehead #experiencemore {
+#pagehead .experiencemore {
   position: absolute;
-  top: 88%;
+  top: 85vh;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   height: 10%;
-  margin: 0 auto;
   transition: top ease-in-out .5s;
 }
 
-#pagehead #experiencemore a {
+#pagehead .experiencemore a {
   display: block;
   width: 100%;
   margin-bottom: 1%;
-  font-size: 130%;
   font-weight: semi-bold;
   color: #35536B;
   text-align: center;
 }
 
-#pagehead #experiencemore img {
+#pagehead .experiencemore img {
   width: 100%;
   height: 45%;
 }
 
-#pagehead #experiencemore:hover {
-  top: 87%;
+#pagehead .experiencemore:hover {
+  top: 87vh;
 }
 
 #pagebody {
-  height: 300px;
+  height: 100vh;
   width: 100%;
-  background: red;
+  position: absolute;
+  top: 100vh;
+  background: #ECEAF2;
+}
+
+#pagebody .row {
+  width: 80%;
+  height: auto;
+  position: relative;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 0%;
+  padding: 1%;
+  overflow: hidden;
+}
+
+#pagebody .row .feature {
+  display: inline-block;
+  width: 25%;
+  min-height: 80%;
+  position: relative;
+  margin: 3.8%;
+  padding: 2px;
+  vertical-align: top;
+  background: #f5f3f8;
+  box-shadow: 0px 0px 30px #d0cbde;
+}
+
+#pagebody .row .feature img {
+  margin-left: 40%;
+  margin-top: 3%;
+  width: 20%;
+  height: 10%;
+}
+
+#pagebody .row .feature p {
+  width: 94%;
+  height: 55%;
+  margin: 3%;
+  vertical-align: center;
+  text-align: center;
+}
+
+#pagebody .experiencemore {
+  position: absolute;
+  top: 85vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 10%;
+  transition: top ease-in-out .5s;
+}
+
+#pagebody .experiencemore a {
+  display: block;
+  width: 100%;
+  margin-bottom: 1%;
+  font-weight: semi-bold;
+  color: #35536B;
+  text-align: center;
+}
+
+#pagebody .experiencemore img {
+  width: 100%;
+  height: 45%;
+}
+
+#pagebody .experiencemore:hover {
+  top: 87vh;
+}
+
+#footer {
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+  top: 200vh;
+  background-color: #35536B;
+}
+
+#footer #profiles {
+  width: 80%;
+  height: auto;
+  position: relative;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 0%;
+  padding: 1%;
+  overflow: hidden;
+}
+
+#footer #profiles .row {
+  width: 80%;
+  height: auto;
+  position: relative;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 0%;
+  padding: 1%;
+  overflow: hidden;
+}
+
+#footer #profiles .row img {
+  width: 200px;
+  height: 200px;
+  margin: 2.25%;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+#footer #profiles .row p {
+  display: inline-block;
+  width: 200px;
+  margin-left: 2.25%;
+  margin-right: 2.25%;
+  vertical-align: top;
+  font-size: 24px;
+  text-align: center;
+  color: #ECEAF2;
 }
