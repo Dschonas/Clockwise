@@ -15,11 +15,11 @@
 				<img src="asstets/Logo.svg"/>
 				<form action="php/register.php" method="post">
 					<ul>
-						<li><input type="text" 		placeholder="Username" 	name="username"/></li>
-						<li><input type="password" 	placeholder="Password" 	name="password"/></li>
-						<li><input type="text" 		placeholder="E-Mail" 	name="mail"/></li>
+						<li><input type="text" 		placeholder="Username" 	name="username"	class="textinput" /></li>
+						<li><input type="password" 	placeholder="Password" 	name="password"	class="textinput"/></li>
+						<li><input type="text" 		placeholder="E-Mail" 	name="e-mail"		class="textinput" /></li>
 						<li><input type="submit"	value="Register Now"	name="register"/></li>
-						<li><a href="#"> <!-- TODO add action for script to show pop up -->
+						<li><a href="#pagebody">  <!--TODO add action for script to show pop up -->
 							Already have an account?
 						</a></li>
 					</ul>
@@ -32,33 +32,61 @@
 		</div>
 
 		<div id="pagebody">
-			<div class="row">
-					<div class="feature">
-						<img src="asstets/Sample-icon.png">
-						<p>Work together in teams and always stay up to date</p>
+
+			<div class="cards">
+  				<div class="card">
+    				<div class="card-image">
+      					<img src="asstets/Garbiel.jpg" alt="">
+    				</div>
+    				<div class="card-copy">
+      					<p>Work on collaborative projects wherever you are with cloud based services.</p>
+    				</div>
+  				</div>
+
+  				<div class="card">
+    				<div class="card-image">
+      					<img src="asstets/Garbiel.jpg" alt="">
+    				</div>
+    				<div class="card-copy">
+      					<p>Manage you time effectively and share the work with your team members.</p>
+    				</div>
+  				</div>
+
+				<div class="card">
+					<div class="card-image">
+						<img src="asstets/Garbiel.jpg" alt="">
 					</div>
-					<div class="feature">
-						<img src="asstets/Sample-icon.png">
-						<p>Never miss out on news and what is happening in your project</p>
+					<div class="card-copy">
+				    	<p>Never miss out on the things that need to be done with collaborative task management.</p>
 					</div>
-					<div class="feature">
-						<img src="asstets/Sample-icon.png">
-						<p>Manage your time and share your work with others</p>
+				</div>
+
+				<div class="card">
+    				<div class="card-image">
+      					<img src="asstets/Garbiel.jpg" alt="">
+    				</div>
+    				<div class="card-copy">
+      					<p>Get an overview of all the work that you and you team have accomblished to do.</p>
+    				</div>
+  				</div>
+
+  				<div class="card">
+    				<div class="card-image">
+      					<img src="asstets/Garbiel.jpg" alt="">
+    				</div>
+    				<div class="card-copy">
+      					<p>Access Clockwise from any device you want. Everyhing is done in your browser.</p>
+    				</div>
+  				</div>
+
+				<div class="card">
+					<div class="card-image">
+						<img src="asstets/Garbiel.jpg" alt="">
 					</div>
-			</div>
-			<div class="row">
-					<div class="feature">
-						<img src="asstets/Sample-icon.png">
-						<p>See and evaluate your progress in long-time graphs</p>
+					<div class="card-copy">
+				    	<p>Powered by young developers that are always pushing for new features.</p>
 					</div>
-					<div class="feature">
-						<img src="asstets/Sample-icon.png">
-						<p>Independet from the OS you have chosen and the country you</p>
-					</div>
-					<div class="feature">
-						<img src="asstets/Sample-icon.png">
-						<p>Powered by developers who are always pushing for updates</p>
-					</div>
+				</div>
 			</div>
 			<div class="experiencemore">
 				<a>See who made all of this!</a>
@@ -68,22 +96,27 @@
 
 		<div id="footer">
 			<div id="profiles">
-				<div class="row">
+				<div class="profile">
 					<img src="asstets/Garbiel.jpg">
-					<img src="asstets/Bart.jpg">
-					<img src="asstets/Max.jpg">
-					<img src="asstets/Jonas.jpg">
-				</div>
-				<div class="row">
 					<p>Gabriel Asherov</p>
+				</div>
+				<div class="profile">
+					<img src="asstets/Bart.jpg">
 					<p>Michael Bart</p>
+				</div>
+				<div class="profile">
+					<img src="asstets/Max.jpg">
 					<p>Maximilian<br>Meyer-Mölleringhof</p>
+				</div>
+				<div class="profile">
+					<img src="asstets/Jonas.jpg">
 					<p>Jonas Neumair</p>
 				</div>
-				<div class="row"></div>
-				<div class="row"></div>
 			</div>
-			<div>Icons made by <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+			<!--<div>Icons made by <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
 		</div>
+
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js"/>
+		<script type="text/javascript" src="js/style.js"/>
 	</body>
 </html>
