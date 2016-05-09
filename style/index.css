@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro';
+  font-size: 20px;
+}
+
+html {
+  display: block;
+}
+
+#pagehead {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+#pagehead #titletext {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: 12%;
+  transform: translateX(-50%) translateY(-20%);
+  font-size: 60px;
+  font-weight: semi-bold;
+  text-align: center;
+}
+
+#pagehead #registerform {
+  position: absolute;
+  width: 70%;
+  left: 40%;
+  top: 30%;
+  transform: translateX(-35%);
+  background: white;
+}
+
+#pagehead #registerform form {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+#pagehead #registerform form ul {
+  list-style-type: none;
+}
+
+#pagehead #registerform form ul li {
+  margin-left: 10%;
+  margin-top: 8%;
+  width: 80%;
+}
+
+#pagehead #registerform form ul li input {
+  outline: none;
+  width: 100%;
+}
+
+#pagehead #registerform form ul li input[type=text], #pagehead #registerform form ul li input[type=password] {
+  border: none;
+  border-bottom: 2px solid #35536B;
+  transition: border-bottom-color ease-in-out .2s;
+}
+
+#pagehead #registerform form ul li input[type=text]:focus, #pagehead #registerform form ul li input[type=password]:focus {
+  border-bottom-color: #77B39B;
+}
+
+#pagehead #registerform form ul li input[type=submit] {
+  height: 100%;
+  padding: 1%;
+  color: #ECEAF2;
+  background-color: #35536B;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out .2s;
+}
+
+#pagehead #registerform form ul li input[type=submit]:hover, #pagehead #registerform form ul li input[type=submit]:focus {
+  background-color: #77B39B;
+}
+
+#pagehead #registerform form ul li:first-child {
+  margin-top: 18;
+}
+
+#pagehead #registerform form ul li:last-child {
+  margin-top: 1%;
+}
+
+#pagehead #registerform form ul li:last-child a {
+  display: block;
+  width: 60%;
+  margin: 0 20%;
+  font-size: 14px;
+  text-align: center;
+}
+
+#pagehead #registerform img {
+  width: 50%;
+  height: 50%;
+  float: left;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE/Edge */
+  user-select: none;
+}
+
+#pagehead .experiencemore {
+  position: absolute;
+  top: 85vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 10%;
+  transition: top ease-in-out .5s;
+}
+
+#pagehead .experiencemore a {
+  display: block;
+  width: 100%;
+  margin-bottom: 1%;
+  font-weight: semi-bold;
+  color: #35536B;
+  text-align: center;
+}
+
+#pagehead .experiencemore img {
+  width: 100%;
+  height: 45%;
+}
+
+#pagehead .experiencemore:hover {
+  top: 87vh;
+}
+
+#pagebody {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 100vh;
+  background: #ECEAF2;
+}
+
+#pagebody .cards {
+  height: 80%;
+  width: 80%;
+  margin: 2% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: space-between;
+  justify-content: flex-start;
+}
+
+#pagebody .cards .card {
+  background-color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 10px #d0cbde;
+  max-height: 300px;
+  flex-basis: calc(33% - 14%);
+  flex-grow: 1;
+  margin: 0 5% 3% 5%;
+  transition: all 0.2s ease-in-out;
+}
+
+#pagebody .cards .card .card-image {
+  background-color: white;
+  height: 100px;
+  max-height: 100px;
+  overflow: hidden;
+}
+
+#pagebody .cards .card .card-image img {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+#pagebody .cards .card .card-copy {
+  padding: 6% 6%;
+}
+
+#pagebody .cards .card .card-copy p {
+  text-align: center;
+  margin: 0 3%;
+}
+
+#pagebody .experiencemore {
+  position: absolute;
+  top: 87vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 10%;
+  transition: top ease-in-out .5s;
+}
+
+#pagebody .experiencemore a {
+  display: block;
+  width: 100%;
+  margin-bottom: 1%;
+  font-weight: semi-bold;
+  color: #35536B;
+  text-align: center;
+}
+
+#pagebody .experiencemore img {
+  width: 100%;
+  height: 45%;
+}
+
+#pagebody .experiencemore:hover {
+  top: 89vh;
+}
+
+#footer {
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+  top: 200vh;
+  background-color: #35536B;
+}
+
+#footer #profiles {
+  width: 80%;
+  height: auto;
+  margin: 10%;
+  margin-top: 5%;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: space-between;
+  justify-content: center;
+}
+
+#footer #profiles .profile {
+  display: inline-block;
+  flex-basis: calc(80% / 4 - 6%);
+  height: 300px;
+  margin: 2%;
+  vertical-align: top;
+}
+
+#footer #profiles .profile img {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  float: left;
+}
+
+#footer #profiles .profile p {
+  width: 200px;
+  margin-left: 2.25%;
+  margin-right: 2.25%;
+  float: left;
+  vertical-align: top;
+  text-align: center;
+  color: #ECEAF2;
+}
+
+@media (max-width: 470px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+  }
+  html {
+    display: block;
+  }
+  #pagehead {
+    height: 1100px;
+    width: 100%;
+    background-color: white;
+  }
+  #pagehead #titletext {
+    position: absolute;
+    max-width: 100%;
+    top: 639.53488px;
+    margin-top: 6%;
+    padding: 50px;
+    border-top: 2px solid #35536B;
+    border-bottom: 2px solid #35536B;
+    font-size: 58px;
+    font-weight: semi-bold;
+    text-align: center;
+  }
+  #pagehead #registerform {
+    width: 90%;
+    left: 40%;
+    top: 2.5%;
+    transform: translateX(-40%);
+    background: white;
+  }
+  #pagehead #registerform form {
+    height: 100%;
+    width: 100%;
+    margin-top: 7%;
+  }
+  #pagehead #registerform form ul li {
+    margin-left: 10%;
+    margin-top: 8%;
+    width: 80%;
+  }
+  #pagehead #registerform form ul li input[type=submit]:hover, #pagehead #registerform form ul li input[type=submit]:focus {
+    background-color: #35536B;
+  }
+  #pagehead #registerform form ul li:last-child {
+    margin-top: 1%;
+  }
+  #pagehead #registerform form ul li:last-child a {
+    width: 100%;
+    margin: 0;
+  }
+  #pagehead #registerform img {
+    width: 90%;
+    height: 100%;
+    margin: 5%;
+  }
+  #pagehead .experiencemore {
+    top: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10%;
+  }
+  #pagehead .experiencemore a {
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+    font-weight: semi-bold;
+    color: #35536B;
+    text-align: center;
+  }
+  #pagehead .experiencemore img {
+    width: 100%;
+    height: 45%;
+  }
+  #pagehead .experiencemore:hover {
+    top: 1000px;
+  }
+  #pagebody {
+    position: absolute;
+    height: 4000px;
+    width: 100%;
+    top: 1100px;
+  }
+  #pagebody .cards {
+    height: 80%;
+    width: 80%;
+    margin: 10%;
+  }
+  #pagebody .cards .card {
+    flex-basis: 80%;
+    flex-grow: 1;
+    max-height: 300px;
+    margin: 0 3% 3% 3%;
+    transition: all 0.2s ease-in-out;
+  }
+  #pagebody .cards .card .card-image {
+    background-color: white;
+    height: 100px;
+    max-height: 100px;
+    overflow: hidden;
+  }
+  #pagebody .cards .card .card-image img {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+  }
+  #pagebody .cards .card .card-copy {
+    padding: 6% 6%;
+  }
+  #pagebody .cards .card .card-copy p {
+    text-align: center;
+    margin: 0 3%;
+  }
+  #pagebody .experiencemore {
+    position: absolute;
+    top: 5000px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10%;
+    transition: top ease-in-out .5s;
+  }
+  #pagebody .experiencemore a {
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+    font-weight: semi-bold;
+    color: #35536B;
+    text-align: center;
+  }
+  #pagebody .experiencemore img {
+    width: 100%;
+    height: 45%;
+  }
+  #pagebody .experiencemore:hover {
+    top: 89vh;
+  }
+  #footer {
+    height: 1000px;
+    width: 100%;
+    top: 4000px;
+    background-color: #35536B;
+  }
+  #footer #profiles {
+    width: 80%;
+    height: auto;
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 0%;
+    padding: 1%;
+    overflow: hidden;
+  }
+  #footer #profiles .row {
+    width: 80%;
+    height: auto;
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 0%;
+    padding: 1%;
+    overflow: hidden;
+  }
+  #footer #profiles .row img {
+    width: 200px;
+    height: 200px;
+    margin: 2.25%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
+  #footer #profiles .row p {
+    display: inline-block;
+    width: 200px;
+    margin-left: 2.25%;
+    margin-right: 2.25%;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: center;
+    color: #ECEAF2;
+  }
+}

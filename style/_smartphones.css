@@ -1,0 +1,227 @@
+@media (max-width: 700px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+  }
+  html {
+    display: block;
+  }
+  #pagehead {
+    height: 200px;
+    width: 100%;
+    background-color: white;
+  }
+  #pagehead #titletext {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%) translateY(-20%);
+    font-size: 60px;
+    font-weight: semi-bold;
+    text-align: center;
+  }
+  #pagehead #registerform {
+    position: absolute;
+    width: 70%;
+    left: 40%;
+    top: 30%;
+    transform: translateX(-35%);
+    background: white;
+  }
+  #pagehead #registerform form {
+    height: 100%;
+    width: 50%;
+    float: left;
+  }
+  #pagehead #registerform form ul {
+    list-style-type: none;
+  }
+  #pagehead #registerform form ul li {
+    margin-left: 10%;
+    margin-top: 8%;
+    width: 80%;
+  }
+  #pagehead #registerform form ul li input {
+    outline: none;
+    width: 100%;
+  }
+  #pagehead #registerform form ul li input[type=text], #pagehead #registerform form ul li input[type=password] {
+    border: none;
+    border-bottom: 2px solid #35536B;
+    transition: border-bottom-color ease-in-out .2s;
+  }
+  #pagehead #registerform form ul li input[type=text]:focus, #pagehead #registerform form ul li input[type=password]:focus {
+    border-bottom-color: #77B39B;
+  }
+  #pagehead #registerform form ul li input[type=submit] {
+    height: 100%;
+    padding: 1%;
+    color: #ECEAF2;
+    background-color: #35536B;
+    border: none;
+  }
+  #pagehead #registerform form ul li:first-child {
+    margin-top: 18;
+  }
+  #pagehead #registerform form ul li:last-child {
+    margin-top: 1%;
+  }
+  #pagehead #registerform form ul li:last-child a {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+  #pagehead #registerform img {
+    width: 50%;
+    height: 50%;
+    float: left;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
+    user-select: none;
+  }
+  #pagehead .experiencemore {
+    position: absolute;
+    top: 85vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10%;
+    transition: top ease-in-out .5s;
+  }
+  #pagehead .experiencemore a {
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+    font-weight: semi-bold;
+    color: #35536B;
+    text-align: center;
+  }
+  #pagehead .experiencemore img {
+    width: 100%;
+    height: 45%;
+  }
+  #pagehead .experiencemore:hover {
+    top: 87vh;
+  }
+  #pagebody {
+    height: 1000px;
+    width: 100%;
+    top: 200px;
+    background: #ECEAF2;
+  }
+  #pagebody .cards {
+    height: 80%;
+    width: 80%;
+    margin: 2% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: space-around;
+    justify-content: flex-start;
+  }
+  #pagebody .cards .card {
+    background-color: white;
+    border: 2px solid white;
+    box-shadow: 0 0 10px #d0cbde;
+    flex-basis: calc(33% - 14%);
+    flex-grow: 1;
+    margin: 0 5% 3% 5%;
+    transition: all 0.2s ease-in-out;
+  }
+  #pagebody .cards .card .card-image {
+    background-color: white;
+    height: 100px;
+    max-height: 100px;
+    overflow: hidden;
+  }
+  #pagebody .cards .card .card-image img {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+  }
+  #pagebody .cards .card .card-copy {
+    padding: 6% 6%;
+  }
+  #pagebody .cards .card .card-copy p {
+    text-align: center;
+    margin: 0 3%;
+  }
+  #pagebody .experiencemore {
+    position: absolute;
+    top: 87vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10%;
+    transition: top ease-in-out .5s;
+  }
+  #pagebody .experiencemore a {
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+    font-weight: semi-bold;
+    color: #35536B;
+    text-align: center;
+  }
+  #pagebody .experiencemore img {
+    width: 100%;
+    height: 45%;
+  }
+  #pagebody .experiencemore:hover {
+    top: 89vh;
+  }
+  #footer {
+    height: 80vh;
+    width: 100%;
+    top: 200vh;
+    background-color: #35536B;
+  }
+  #footer #profiles {
+    width: 80%;
+    height: auto;
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 0%;
+    padding: 1%;
+    overflow: hidden;
+  }
+  #footer #profiles .row {
+    width: 80%;
+    height: auto;
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 0%;
+    padding: 1%;
+    overflow: hidden;
+  }
+  #footer #profiles .row img {
+    width: 200px;
+    height: 200px;
+    margin: 2.25%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
+  #footer #profiles .row p {
+    display: inline-block;
+    width: 200px;
+    margin-left: 2.25%;
+    margin-right: 2.25%;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: center;
+    color: #ECEAF2;
+  }
+}
