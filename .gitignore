@@ -58,3 +58,6 @@ config.codekit
 
 ### Prepros ###
 prepros.cfg
+
+### database connection ###
+connect.php
