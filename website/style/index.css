@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro';
+  font-size: 20px;
+  color: #001D26;
+}
+
+body {
+  display: block;
+}
+
+#pagehead {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-height: 700px;
+}
+
+#pagehead table {
+  width: 80%;
+  margin: auto;
+}
+
+#pagehead table td {
+  border: 1px solid black;
+  width: 50%;
+}
+
+#pagehead table td ul {
+  border: 1px solid black;
+  list-style-type: none;
+}
+
+#pagehead .experiencemore {
+  position: absolute;
+  top: 85vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 10%;
+  transition: top ease-in-out .5s;
+}
+
+#pagehead .experiencemore a {
+  display: block;
+  width: 100%;
+  margin-bottom: 1%;
+  font-weight: semi-bold;
+  color: #35536B;
+  text-align: center;
+}
+
+#pagehead .experiencemore img {
+  height: 45%;
+  min-height: 40px;
+  width: 100%;
+  min-width: 40px;
+}
+
+#pagehead .experiencemore:hover {
+  top: 87vh;
+}
+
+#pagebody {
+  height: 100vh;
+  min-height: 700px;
+  background-color: #ECEAF2;
+}
+
+#pagebody .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 10% 0;
+  border: 1px  solid black;
+}
+
+#pagebody .cards .card {
+  height: 100px;
+  min-height: 100px;
+  width: 100px;
+  min-width: 100px;
+  margin: auto;
+  background-color: white;
+}
+
+#pagebody .cards .card img {
+  width: 100px;
+  height: 100px;
+}
