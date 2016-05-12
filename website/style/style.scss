@@ -1,3 +1,6 @@
+@import "smartphones.scss";
+@import "project_view.scss";
+
 //colors
 $primary-color:		#35536B;
 $secondary-color:	#77B39B;
@@ -6,9 +9,9 @@ $light-color:		#F6E27F;
 $accent-color:		#ECEAF2;
 
 //font
-$font-size: 20px;
-$font-size-small: $font-size - 6;
-$font-size-header: $font-size + 40;
+$font-size: 1.03em;
+$font-size-small: $font-size - .25;
+$font-size-header: $font-size + 1;
 
 *{
 	margin: 0;

@@ -1,0 +1,60 @@
+//colors
+$primary-color:		#35536B;
+$secondary-color:	#77B39B;
+$text-color:		#001D26;
+$light-color:		#F6E27F;
+$accent-color:		#ECEAF2;
+
+//font
+$font-size: 1.03em;
+$font-size-small: $font-size - .25;
+$font-size-header: $font-size + 1;
+
+#project_view_nav {
+	display: inline-block;
+	width: calc(80% - 20px);
+	position: absolute;
+	min-width: 0;
+	margin: 0 10%;
+	margin-top: 40px;
+	padding-right: 10px;
+	padding-left: 10px;
+	height: 80px;
+	background-color: $accent-color;
+	border-bottom: 3px solid $primary-color;
+	#logo{
+		float: left;
+		img{
+			width: 90px;
+			height: 80px;
+		}
+	}
+	#nav_header{
+		display: block;
+		width: 40%;
+		margin: auto;
+		padding-top: 10px;
+		vertical-align: bottom;
+		font-size: $font-size-header;
+		line-height: 70px;
+		text-align: center;
+		border: 1px solid black;
+	}
+	#user_profile{
+		display: inline-block;
+		width: 200px;
+		float: right;
+		border: 1px solid red;
+		#profile{
+			#welcome{
+				float: left;
+				border: 1px solid green;
+			}
+			img{
+				width: 60px;
+				height: 60px;
+				float: right;
+			}
+		}
+	}
+}
