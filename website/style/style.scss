@@ -1,5 +1,7 @@
 @import "smartphones.scss";
 @import "project_view.scss";
+@import "normalize.css";
+@import "skeleton.css";
 
 //colors
 $primary-color:		#35536B;
@@ -29,23 +31,19 @@ body{
 	top: 0;
 	left: 0;
 	height: 100vh;
-	min-height: 700px;
-	table{
-		width: 80%;
-		margin: auto;
-		td{
-			border: 1px solid black;
-			width: 50%;
-			img{
-				
-			}
-			ul{
-				border: 1px solid black;
-				list-style-type: none;
-				form{
+	min-height: 650px;
+	p{
+		font-size: $font-size-header + 1;
+		text-align: center;
+	}
+	img{
+		
+	}
+	ul{
+		border: 1px solid black;
+		list-style-type: none;
+		form{
 
-				}
-			}
 		}
 	}
 	.experiencemore{
@@ -60,6 +58,7 @@ body{
 			display: block;
 			width: 100%;
 			margin-bottom: 1%;
+			font-size: $font-size + .5;
 			font-weight: semi-bold;
 			color: $primary-color;
 			text-align: center;
@@ -77,29 +76,35 @@ body{
 }
 
 #pagebody{
-	height: 100vh;
+	height: 125vh;
 	min-height: 700px;
-	background-color: $accent-color;
-	.cards{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: flex-start;
-		align-content: center;
-		margin: 10% 0;
-		border: 1px  solid black;
-		.card{
-			height: 100px;
-			min-height: 100px;
-			width: 100px;
-			min-width: 100px;
+	padding-top: 5%;
+	.row{
+		margin-bottom: 5%;
+	}
+	.card{
+		padding: 2.5% 1%;
+		padding-bottom: 0;
+		background-color: white;
+		box-shadow: 0px 0px 10px 3px $accent-color;
+		.image{
+			width: 80px;
 			margin: auto;
-			background-color: white;
 			img{
-				width: 100px;
-				height: 100px;
+				width: 80px;
+				height: auto;
 			}
+		}
+		p{
+			color: $primary-color;
+		}
+		.title{
+			text-align: center;
+			font-size: $font-size + 0.25;
+			font-weight: bold;
+		}
+		.text{
+			text-align: center;
 		}
 	}
 }

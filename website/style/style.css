@@ -1,4 +1,10 @@
-#project_view_nav {
+@import url(normalize.css);
+@import url(skeleton.css);
+#project_view {
+  min-height: calc(100% + 100px);
+}
+
+#project_view #project_view_nav {
   display: inline-block;
   width: calc(80% - 20px);
   position: absolute;
@@ -12,16 +18,16 @@
   border-bottom: 3px solid #35536B;
 }
 
-#project_view_nav #logo {
+#project_view #project_view_nav #logo {
   float: left;
 }
 
-#project_view_nav #logo img {
+#project_view #project_view_nav #logo img {
   width: 90px;
   height: 80px;
 }
 
-#project_view_nav #nav_header {
+#project_view #project_view_nav #nav_header {
   display: block;
   width: 40%;
   margin: auto;
@@ -33,19 +39,19 @@
   border: 1px solid black;
 }
 
-#project_view_nav #user_profile {
+#project_view #project_view_nav #user_profile {
   display: inline-block;
   width: 200px;
   float: right;
   border: 1px solid red;
 }
 
-#project_view_nav #user_profile #profile #welcome {
+#project_view #project_view_nav #user_profile #profile #welcome {
   float: left;
   border: 1px solid green;
 }
 
-#project_view_nav #user_profile #profile img {
+#project_view #project_view_nav #user_profile #profile img {
   width: 60px;
   height: 60px;
   float: right;
@@ -67,20 +73,15 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  min-height: 700px;
+  min-height: 650px;
 }
 
-#pagehead table {
-  width: 80%;
-  margin: auto;
+#pagehead p {
+  font-size: 3.03em;
+  text-align: center;
 }
 
-#pagehead table td {
-  border: 1px solid black;
-  width: 50%;
-}
-
-#pagehead table td ul {
+#pagehead ul {
   border: 1px solid black;
   list-style-type: none;
 }
@@ -99,6 +100,7 @@ body {
   display: block;
   width: 100%;
   margin-bottom: 1%;
+  font-size: 1.53em;
   font-weight: semi-bold;
   color: #35536B;
   text-align: center;
@@ -116,32 +118,42 @@ body {
 }
 
 #pagebody {
-  height: 100vh;
+  height: 125vh;
   min-height: 700px;
-  background-color: #ECEAF2;
+  padding-top: 5%;
 }
 
-#pagebody .cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: center;
-  margin: 10% 0;
-  border: 1px  solid black;
+#pagebody .row {
+  margin-bottom: 5%;
 }
 
-#pagebody .cards .card {
-  height: 100px;
-  min-height: 100px;
-  width: 100px;
-  min-width: 100px;
-  margin: auto;
+#pagebody .card {
+  padding: 2.5% 1%;
+  padding-bottom: 0;
   background-color: white;
+  box-shadow: 0px 0px 10px 3px #ECEAF2;
 }
 
-#pagebody .cards .card img {
-  width: 100px;
-  height: 100px;
+#pagebody .card .image {
+  width: 80px;
+  margin: auto;
+}
+
+#pagebody .card .image img {
+  width: 80px;
+  height: auto;
+}
+
+#pagebody .card p {
+  color: #35536B;
+}
+
+#pagebody .card .title {
+  text-align: center;
+  font-size: 1.28em;
+  font-weight: bold;
+}
+
+#pagebody .card .text {
+  text-align: center;
 }
