@@ -118,9 +118,12 @@ body {
 }
 
 #pagebody {
-  height: 125vh;
+  height: 115vh;
+  width: 100%;
+  max-height: 800px;
   min-height: 700px;
   padding-top: 5%;
+  background: #ECEAF2;
 }
 
 #pagebody .row {
@@ -156,4 +159,35 @@ body {
 
 #pagebody .card .text {
   text-align: center;
+}
+
+#footer {
+  max-height: 800px;
+  min-height: 700px;
+  padding-top: 5%;
+  background: #35536B;
+}
+
+#footer .twelve p {
+  font-size: 3.03em;
+  text-align: center;
+  color: #ECEAF2;
+}
+
+#footer p {
+  text-align: center;
+  font-size: 1.28em;
+  letter-spacing: .05em;
+  color: #ECEAF2;
+}
+
+#footer .image {
+  width: 200px;
+  margin: auto;
+}
+
+#footer .image img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
 }
