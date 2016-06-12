@@ -8,22 +8,79 @@
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600italic,600' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id="project_view">
-			<nav id="project_view_nav">
-				<a id="logo" href="index.html"><img src="asstets/Logo.svg"/></a>
-				<a id="user_profile">
-					<div id="welcome">Hello User!</div> <!-- shows the username of the logged in user -->
-					<div id="profile"><img src="asstets/Garbiel.jpg"/></div>
-				</a>
-				<p id="nav_header">Your Projects</p>
-			</nav>
-		
+		<div id="projectview">
+			<div class="container" id="navigation">
+				<div class="row">
+					<div class="twelve columns card">
+						<div class="logo"><a href="index.html"><img class="one-half column" src="assets/Logo.svg"/></a></div>
+						<div id="title">Your Projects</div>
+						<div id="profile">
+							<!--<p>Hello User!</p>-->
+							<div class="image"><a href="#"><img src="assets/Bart.jpg"></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-		<div id="footer">
+			<div class="container" id="projects">
+				<div class="row category">
+					<div class="twelve columns card">
+						<p>Recently Worked On</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<a class="six columns card hvr-outline-in" href="#">
+						<p>Name of the project 1</p>
+					</a>
+
+					<a class="six columns card hvr-buzz-out" href="#">
+						<p>Name of the project 2</p>
+					</a>
+
+					<a class="six columns card hvr-buzz-out" href="#">
+						<p>Name of the project 3</p>
+					</a>
+				</div>
+
+				<div class="row category">
+					<div class="twelve columns card">
+						<p>Shared Projects</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<a class="six columns card hvr-buzz-out" href="#">
+						<p>Name of the project 4</p>
+					</a>
+
+					<a class="six columns card hvr-buzz-out" href="#">
+						<p>Name of the project 5</p>
+					</a>
+				</div>
+
+				<div class="row category">
+					<div class="twelve columns card">
+						<p>Your Projects</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<a class="six columns card hvr-buzz-out" href="#">
+						<p>Name of the project 6</p>
+					</a>
+
+					<a class="six columns card hvr-buzz-out" href="#">
+						<p>Name of the project 7</p>
+					</a>
+				</div>
+
+			</div>
+			
 
 		</div>
-		
-		</div>
+
+
 		<script type="text/javascript" src="js/jquery-2.2.3.min.js"/>
 		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"/>
 	</body>

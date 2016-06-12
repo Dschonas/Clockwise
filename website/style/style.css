@@ -1,62 +1,7 @@
+@import url(hover.css);
 @import url(normalize.css);
 @import url(skeleton.css);
-#project_view {
-  min-height: calc(100% + 100px);
-}
-
-#project_view #project_view_nav {
-  display: inline-block;
-  width: calc(80% - 20px);
-  position: absolute;
-  min-width: 0;
-  margin: 0 10%;
-  margin-top: 40px;
-  padding-right: 10px;
-  padding-left: 10px;
-  height: 80px;
-  background-color: #ECEAF2;
-  border-bottom: 3px solid #35536B;
-}
-
-#project_view #project_view_nav #logo {
-  float: left;
-}
-
-#project_view #project_view_nav #logo img {
-  width: 90px;
-  height: 80px;
-}
-
-#project_view #project_view_nav #nav_header {
-  display: block;
-  width: 40%;
-  margin: auto;
-  padding-top: 10px;
-  vertical-align: bottom;
-  font-size: 2.03em;
-  line-height: 70px;
-  text-align: center;
-  border: 1px solid black;
-}
-
-#project_view #project_view_nav #user_profile {
-  display: inline-block;
-  width: 200px;
-  float: right;
-  border: 1px solid red;
-}
-
-#project_view #project_view_nav #user_profile #profile #welcome {
-  float: left;
-  border: 1px solid green;
-}
-
-#project_view #project_view_nav #user_profile #profile img {
-  width: 60px;
-  height: 60px;
-  float: right;
-}
-
+@import url(popup.css);
 * {
   margin: 0;
   padding: 0;
@@ -65,28 +10,78 @@
   color: #001D26;
 }
 
-body {
+html, body {
   display: block;
 }
 
-#pagehead {
+#landingpage #pagehead {
   top: 0;
   left: 0;
   height: 100vh;
   min-height: 650px;
+  padding-top: 5%;
 }
 
-#pagehead p {
+#landingpage #pagehead p {
   font-size: 3.03em;
   text-align: center;
 }
 
-#pagehead ul {
-  border: 1px solid black;
+#landingpage #pagehead form {
+  padding: 2.5%;
+}
+
+#landingpage #pagehead form ul {
+  width: 70%;
+  display: table;
+  margin: 0 auto;
   list-style-type: none;
 }
 
-#pagehead .experiencemore {
+#landingpage #pagehead form ul li {
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#landingpage #pagehead form ul .special {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+#landingpage #pagehead form ul input {
+  width: 100%;
+  margin: auto 0;
+  border: none;
+  border-radius: 0;
+}
+
+#landingpage #pagehead form ul input[type="text"],
+#landingpage #pagehead form ul input[type="password"] {
+  border-bottom: 2px solid #35536B;
+}
+
+#landingpage #pagehead form ul input[type="submit"] {
+  color: #ECEAF2;
+  background-color: #35536B;
+  transition: all ease-in-out .25s;
+}
+
+#landingpage #pagehead form ul input[type="submit"]:hover {
+  background-color: #77B39B;
+}
+
+#landingpage #pagehead form ul input[type="text"]:focus,
+#landingpage #pagehead form ul input[type="password"]:focus {
+  border-bottom: 2px solid #77B39B;
+}
+
+#landingpage #pagehead form ul a {
+  font-size: 0.93em;
+}
+
+#landingpage #pagehead .experiencemore {
   position: absolute;
   top: 85vh;
   left: 50%;
@@ -96,7 +91,7 @@ body {
   transition: top ease-in-out .5s;
 }
 
-#pagehead .experiencemore a {
+#landingpage #pagehead .experiencemore a {
   display: block;
   width: 100%;
   margin-bottom: 1%;
@@ -106,18 +101,18 @@ body {
   text-align: center;
 }
 
-#pagehead .experiencemore img {
+#landingpage #pagehead .experiencemore img {
   height: 45%;
   min-height: 40px;
   width: 100%;
   min-width: 40px;
 }
 
-#pagehead .experiencemore:hover {
+#landingpage #pagehead .experiencemore:hover {
   top: 87vh;
 }
 
-#pagebody {
+#landingpage #pagebody {
   height: 115vh;
   width: 100%;
   max-height: 800px;
@@ -126,68 +121,146 @@ body {
   background: #ECEAF2;
 }
 
-#pagebody .row {
+#landingpage #pagebody .row {
   margin-bottom: 5%;
 }
 
-#pagebody .card {
+#landingpage #pagebody .card {
   padding: 2.5% 1%;
   padding-bottom: 0;
   background-color: white;
   box-shadow: 0px 0px 10px 3px #ECEAF2;
 }
 
-#pagebody .card .image {
+#landingpage #pagebody .card .image {
   width: 80px;
   margin: auto;
 }
 
-#pagebody .card .image img {
+#landingpage #pagebody .card .image img {
   width: 80px;
   height: auto;
 }
 
-#pagebody .card p {
+#landingpage #pagebody .card p {
   color: #35536B;
 }
 
-#pagebody .card .title {
+#landingpage #pagebody .card .title {
   text-align: center;
   font-size: 1.28em;
   font-weight: bold;
 }
 
-#pagebody .card .text {
+#landingpage #pagebody .card .text {
   text-align: center;
 }
 
-#footer {
+#landingpage #footer {
   max-height: 800px;
   min-height: 700px;
   padding-top: 5%;
   background: #35536B;
 }
 
-#footer .twelve p {
+#landingpage #footer div, #landingpage #footer a {
+  color: #ECEAF2;
+  text-align: center;
+  text-decoration: none;
+}
+
+#landingpage #footer a:hover {
+  color: #77B39B;
+}
+
+#landingpage #footer .twelve p {
   font-size: 3.03em;
   text-align: center;
   color: #ECEAF2;
 }
 
-#footer p {
+#landingpage #footer p {
   text-align: center;
   font-size: 1.28em;
   letter-spacing: .05em;
   color: #ECEAF2;
 }
 
-#footer .image {
+#landingpage #footer .image {
   width: 200px;
   margin: auto;
 }
 
-#footer .image img {
+#landingpage #footer .image img {
   width: 200px;
   height: auto;
   border-radius: 50%;
+}
+
+#projectview #navigation {
+  height: 155px;
+  border-top: 45px solid white;
+  border-bottom: 2px solid #35536B;
+  text-align: center;
+}
+
+#projectview #navigation * {
+  display: inline;
+}
+
+#projectview #navigation .logo {
+  float: left;
+}
+
+#projectview #navigation .logo img {
+  height: 110px;
+  width: 120px;
+}
+
+#projectview #navigation #title {
+  width: 80%;
+  line-height: 110px;
+  text-align: center;
+  font-size: 3.03em;
+}
+
+#projectview #navigation #profile {
+  height: 60px;
+  float: right;
+  padding-top: 25px;
+}
+
+#projectview #navigation #profile p {
+  text-align: left;
+}
+
+#projectview #navigation #profile .image img {
+  width: 68px;
+  border-radius: 50%;
+}
+
+#projectview #projects {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#projectview #projects .category {
+  margin-top: 3em;
+}
+
+#projectview #projects .twelve p {
+  border-bottom: 1px solid black;
+}
+
+#projectview #projects .six {
+  height: 10em;
+  width: 10em;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+}
+
+#projectview #projects .six p {
+  margin-top: 50%;
+  transform: translateY(-58%);
 }
