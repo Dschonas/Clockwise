@@ -264,3 +264,13 @@ html, body {
   margin-top: 50%;
   transform: translateY(-58%);
 }
+
+#timetracking .input {
+  text-align: center;
+  padding-top: 5%;
+}
+
+#timetracking textarea {
+  height: 40%;
+  width: 30%;
+}
