@@ -1,0 +1,25 @@
+@import "normalize";
+@import "prism";
+@import "spectrum-picker";
+.atomsWrap{
+@import "bootstrap/bootstrap";
+@import "utilities/utilities";
+@import "atoms/atoms";
+@import "molecules/molecules";
+@import "organisms/organisms";
+@import "cleanup";
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.italic{
+	font-style: italic;
+}
+
+.link{
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
+}

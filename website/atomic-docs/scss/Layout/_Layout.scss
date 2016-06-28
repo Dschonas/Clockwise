@@ -1,0 +1,12 @@
+.row{
+	margin-top: 1.5%;
+	margin-bottom: 2%;
+	.column, 
+	.columns{
+		border: 1px solid grey;
+		border-radius: 4px;
+		text-align: center;
+	}
+}
+@import "_Grid";
+@import "_Cards";
