@@ -5,8 +5,6 @@
 
 .row .column,
 .row .columns {
-  border: 1px solid grey;
-  border-radius: 4px;
   text-align: center;
 }
 
@@ -171,3 +169,14 @@
 }
 
 /*scss/General/_Font.scss*/
+#pagehead .row .twelve .columns p {
+  font-family: "Source Sans Pro";
+  font-size: 3.03;
+  text-align: center;
+}
+
+.borders .row .column,
+.borders .row .columns {
+  border: 1px solid grey;
+  border-radius: 4px;
+}

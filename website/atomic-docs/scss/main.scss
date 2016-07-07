@@ -1,2 +1,9 @@
 @import "Layout/_Layout";
 @import "General/_General";
+@import "LandingPage/_LandingPage";
+
+.borders .row .column,
+.borders .row .columns {
+  border: 1px solid grey;
+  border-radius: 4px;
+}

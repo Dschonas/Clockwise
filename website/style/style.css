@@ -63,6 +63,7 @@ html, body {
 }
 
 #landingpage #pagehead form ul input[type="submit"] {
+  font-size: 0.73em;
   color: #ECEAF2;
   background-color: #35536B;
   transition: all ease-in-out .25s;
@@ -263,14 +264,4 @@ html, body {
 #projectview #projects .six p {
   margin-top: 50%;
   transform: translateY(-58%);
-}
-
-#timetracking .input {
-  text-align: center;
-  padding-top: 5%;
-}
-
-#timetracking textarea {
-  height: 40%;
-  width: 30%;
 }
